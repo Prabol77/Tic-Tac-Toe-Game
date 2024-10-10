@@ -1,0 +1,28 @@
+body {
+    display: flex; /* Use flexbox layout for the body */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    font-family: Arial, sans-serif; /* Set font family for the text */
+}
+
+#board {
+    display: grid; /* Use grid layout for the game board */
+    grid-template-columns: repeat(3, 100px); /* Create 3 columns of 100px each */
+    grid-gap: 5px; /* Space between the grid items */
+    margin: 20px 0; /* Vertical margin above and below the board */
+}
+
+.cell {
+    width: 100px; /* Set width of each cell */
+    height: 100px; /* Set height of each cell */
+    background-color: #f0f0f0; /* Light gray background color for cells */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    font-size: 2em; /* Increase font size for visibility */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.cell:hover {
+    background-color: #ddd; /* Change background color on hover for visual feedback */
+}
